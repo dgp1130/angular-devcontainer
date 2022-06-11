@@ -1,0 +1,20 @@
+{
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "node",
+  "forwardPorts": [
+    4200, // `ng serve`
+    9876 // `ng test`
+  ],
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // Add the IDs of extensions you want installed when the container is created.
+      "extensions": [
+        "Angular.ng-template",
+        "johnpapa.Angular2"
+      ]
+    }
+  }
+}
